@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-describe.skip('getDaysOffForRange (requires live Neon)', () => {
+describe('getDaysOffForRange (requires live Neon)', () => {
   it('returns entries that overlap the range', async () => {
     const { db } = await import('./client');
     const { daysOff } = await import('./schema');
